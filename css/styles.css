@@ -1,0 +1,319 @@
+/** Web Fonts **/
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+h4, a:link {
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+/** Elements **/
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  padding: 0 3px;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+ul, li{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin-top: 6em;
+}
+
+footer li {
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+
+
+/** Classes **/
+
+
+.main-header {
+  text-align: center;
+}
+
+.main-nav ul {
+  margin-top: 3em;
+}
+
+.main-nav li {
+  margin: 1.5em;
+}
+
+.profile-picture {
+  width: 35%;
+  min-width: 80px;
+  max-width: 140px;
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
+  border-radius: 50%;
+}
+
+.intro {
+  color: black;
+  text-align: center;
+  margin: 10px;
+}
+
+.intro p {
+  max-width: 420px;
+  margin: auto;
+  margin-top: 1.5em;
+}
+
+.portfolio-image {
+  width: 100%;
+  margin: 1em 0;
+  max-width: 400px;
+}
+
+.project-section h3 {
+  color:  #239BA5;
+}
+
+.project {
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+.project p {
+  width: 72%;
+  max-width: 420px;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-section, .skills-section {
+  max-width: 420px;
+  display: inline-block;
+  text-align: center;
+}
+
+.contact-section li {
+  padding-bottom: 15px;
+}
+
+.skills-section li {
+  margin: 1.5em 1.5em 0 1.5em;
+  font-weight: bold;
+  color: #F1948A;
+}
+
+.footer-name {
+  float: left;
+  font-weight: bold;
+}
+
+.footer-back-to-top {
+  float: right;
+}
+
+.footer-nav {
+  float: right;
+  display: none;
+  word-spacing: 8px;
+}
+
+
+/** Pseudo Classes **/
+
+
+a:link {
+  padding: 2px 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 1em;
+  background-color: #2874A6;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  background-color: #85C1E9;
+}
+
+/** IDs **/
+
+
+#portfolio, #contact, #skills {
+  margin: auto;
+  margin-top: 6em;
+  margin-bottom: 2.5em;
+  text-transform: uppercase;
+  max-width: 96%;
+  text-align: center;
+  color: #154360;
+  background-color: #E9F6D8;
+}
+
+
+/** Clearfix **/
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/** Media Queries**/
+
+
+@media (min-width: 768px) {
+
+  body {
+    padding: 1.5em;
+  }
+
+  .main-header {
+    margin-bottom: 2em;
+    margin-top: 0;
+  }
+
+  .header-name, .main-nav ul {
+    margin-top: 0;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin: .5em;
+  }
+
+  .profile-picture {
+    max-width: 130px;
+    margin-top: 3em;
+    float: right;
+    display: inline-block;
+    margin-right: 15%;
+  }
+
+  .intro {
+    text-align: left;
+    margin: auto;
+    margin-bottom: 6.5em;
+  }
+
+  .intro p {
+    margin-top: 1.5em;
+    margin-left: 1em;
+    max-width: 18em;
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .project {
+    width: 48%;
+    padding: 0 4px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .project p {
+    width: 72%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    margin: auto;
+  }
+
+
+  .skills-section li {
+    display: inline-block;
+  }
+
+  #contact {
+    margin-top: 3.5em;
+  }
+
+  .contact-section {
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+  }
+
+  .footer-back-to-top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline-block;
+  }
+
+} /** 768px close **/
+
+@media (min-width: 1024px) {
+
+  .main-header {
+    text-align: left;
+  }
+
+  #header-name {
+    margin-left: 1em;
+    display: inline;
+  }
+
+  .main-nav {
+    display: inline;
+    float: right;
+    margin: auto;
+  }
+
+  .intro {
+    margin: auto;
+    margin-top: 2.5em;
+  }
+
+  .intro p {
+    margin: auto;
+    margin-top: 0;
+    margin-left: 1em;
+  }
+
+  .profile-picture {
+    max-width: 140px;
+    margin-right: 8em;
+    margin-top: 2.5em;
+  }
+
+  .project {
+    width: 32%;
+  }
+
+  .portfolio-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  #skills {
+    margin-top: 11em;
+  }
+
+} /** 1024px close **/
